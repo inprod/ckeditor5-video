@@ -7,7 +7,7 @@ import AutoMediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembedui';
 
 export default class Video extends Plugin {
     static get requires() {
-        return [ VideoEditing, Widget, AutoMediaEmbed];
+        return [ VideoEditing, Widget];
     }
 
     static get pluginName() {
