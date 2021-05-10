@@ -60,7 +60,7 @@ export default class VideoEditing extends Plugin {
 }
 
 export function createVideoViewElement( writer ) {
-	const emptyElement = writer.createEmptyElement( 'video' );
+	const emptyElement = writer.createEmptyElement( 'video', {controls:''} );
 	const figure = writer.createContainerElement( 'figure', { class: 'video' } );
 
 	writer.insert( writer.createPositionAt( figure, 0 ), emptyElement );
